@@ -1,10 +1,17 @@
-#VRML_SIM R2021a utf8
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/containers/protos/WoodenBox.proto"
+
 WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.6931032800836722 0.6931032800836722 0.1980295085953349 0.75
-  position 0.6896899578860344 1.0034072416782294 1.4305300606601847
+  orientation -0.34509005409110255 0.3966540427882994 0.8506341310499467 1.7659705991955303
+  position -0.45089867094610714 -1.8728149053947847 1.8324911654428895
 }
 TexturedBackground {
 }
@@ -13,11 +20,17 @@ TexturedBackgroundLight {
 RectangleArena {
 }
 E-puck {
-  translation -0.22 0 0
+  hidden linearVelocity_0 -1.2150419089650766e-35 -82.2470399949067 5.09247536998105e-09
+  hidden angularVelocity_0 3.3810314729131765e-10 5.175135213942094e-33 3.752784494748569e-28
+  translation -0.22 -346.0955442772553 4.269531355891032e-08
+  rotation 1 3.5567718919326056e-09 -5.11512351530824e-16 2.832123331848936e-09
   controller "ros"
 }
 WoodenBox {
-  translation 0 0.05 0
+  hidden linearVelocity_0 2.6399470389433063e-17 -81.93934769230775 0.3076923076923077
+  hidden angularVelocity_0 0.0951625693893729 1.1948775302528246e-15 -2.664535259100375e-16
+  translation 2.213331597450061e-16 -343.4658520123082 2.579692307692319
+  rotation 1 1.2556171380406844e-14 -2.7999824681046616e-15 0.797842365211138
   size 0.1 0.1 0.1
   mass 2
 }
